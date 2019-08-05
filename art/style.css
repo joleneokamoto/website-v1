@@ -1,67 +1,74 @@
-/* art nav styling */
+/* nav styling */
+.back {
+  padding: 10px;
+}
+/* main content styling */
 .container {
-  display: flex;
-  justify-content: center;
-}
-.nav {
-  padding: 100px 0 50px 0;
-  margin: 0 auto;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  flex-grow: 1;
-  font-family: Helvetica;
-  margin: 0 auto;
-}
-figure {  
-  padding: 0;
-  font-size: 12px;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  flex-grow: 1;
-}
-.grid img {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  display: block;
-  width: 100%;
-}
-.container {
+  padding: 15px 50px 15px;
   position: relative;
-  width: 100%;
+  text-decoration: none;
+  font-family: Helvetica;
 }
-.overlay {
+a img {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(80%);
+}
+.link {
+  /* font styling */
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  padding: 3px 5px 3px;
+  /* position styling */
+  margin: 0;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #67696d;
-}
-.container:hover .overlay {
-  opacity: 0.85;
-}
-.text {
-  position: absolute;
-  color: white;
-  width: 100%;
+  text-align: center;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  pointer-events: none;
+  /* hide text */
+  visibility: hidden;
+}
+a img:hover {
+  filter: grayscale(0);
+}
+a:hover .link {
+  visibility: visible;
+}
+.link:hover ~ img {
+  filter: grayscale(0);
+}
+/* sub content styling */
+h5, p {
+  margin: 10px 0px 10px;
+}
+p {
+  font-size: 14px;
+  line-height: 1.3em;
+}
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 7px;
+}
+.grid-container-2 img {
+  display: block;
+  width: 100%;
+}
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 7px;
+}
+.grid-container-1 img {
+  display: block;
+  width: 100%;
+}
+.container img {
+  width: 100%;
 }
