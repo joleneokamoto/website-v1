@@ -60,3 +60,8 @@ function type() {
   }
 }
 type();
+
+// pop-up for unfinished pages
+function popup() {
+  alert("coming soon!");
+}
