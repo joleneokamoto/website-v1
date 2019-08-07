@@ -104,6 +104,11 @@ a:hover .link {
 .link:hover ~ img {
   filter: grayscale(0);
 }
+@media only screen and (max-width: 400px) {
+  .link {
+    visibility: visible;
+  }
+}
 .link {
   /*font styling*/
   font-size: 25px;
@@ -122,9 +127,4 @@ a:hover .link {
   pointer-events: none;
   /*hide text*/
   visibility: hidden;
-}
-@media only screen and (max-width: 400px) {
-  .link {
-    visibility: visible;
-  }
 }
