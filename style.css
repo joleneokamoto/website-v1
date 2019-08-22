@@ -15,10 +15,13 @@ h2, h3, h5 {
   margin: 10px 0px 10px;
   font-family: Helvetica;
 }
-p {
+p{
   font-size: 14px;
   line-height: 1.3em;
   margin: 10px 0px 10px;
+}
+p a {
+  color: white;
 }
 /*nav styling*/
 nav a {
