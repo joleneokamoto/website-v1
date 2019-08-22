@@ -81,11 +81,13 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 7px;
+  padding-bottom: 10px;
 }
 .grid-container-1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 7px;
+  padding-bottom: 10px;
 }
 /*images*/
 .grid-container-1 img, .grid-container-2 img, .container img {
